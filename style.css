@@ -1,0 +1,217 @@
+/* ---------------------------------------------------------
+   GLOBAL STYLING
+--------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #0a6c26;
+}
+
+img {
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR
+--------------------------------------------------------- */
+
+.sidebar {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0b802c;
+    padding-top: 30px;
+    transition: 0.4s ease;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #0a6c26;
+}
+
+/* Sidebar collapsed (mobile) */
+.sidebar.closed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------
+   TOP BAR
+--------------------------------------------------------- */
+
+.topbar {
+    margin-left: 260px;
+    background: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.4s ease;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #0a6c26;
+}
+
+/* Move content when sidebar closes */
+.topbar.shift {
+    margin-left: 0;
+}
+
+/* ---------------------------------------------------------
+   MAIN CONTENT WRAPPER
+--------------------------------------------------------- */
+
+#content {
+    margin-left: 260px;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+
+#content.shift {
+    margin-left: 0;
+}
+
+/* ---------------------------------------------------------
+   LIST STYLING
+--------------------------------------------------------- */
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------
+   FORM STYLING
+--------------------------------------------------------- */
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+form button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    background: #0a6c26;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    opacity: 0.85;
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    background: #0b802c;
+    color: white;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------------------------- */
+
+@media (max-width: 820px) {
+
+    .sidebar {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #content, .topbar {
+        margin-left: 0;
+    }
+
+    .topbar {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+/* ---------------------------------------------------------
+   SMOOTH SCROLL & ANIMATIONS
+--------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar, #content, .topbar {
+    transition: 0.4s ease;
+}

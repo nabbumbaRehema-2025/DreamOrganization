@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts - AgroTech Innovations</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+    <h2>AgroTech</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    <h1>AgroTech Innovations</h1>
+</div>
+
+<!-- Content wrapper -->
+<div id="content">
+
+<hr>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>
+        All communication, inquiries, partnerships, and service requests will be 
+        received directly by our CEO:
+    </p>
+
+    <h3>CEO: Nabbumba Rehema</h3>
+
+    <!-- CEO Image -->
+    <img src="rehema.jpg" width="40%" alt="CEO Rehema">
+
+    <p><strong>Phone:</strong> 0709838443</p>
+    <p><strong>WhatsApp:</strong> Above Contact is available on Whatsapp</p>
+    <p><strong>Email:</strong> rahmahismael49@gmail.com </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Send a Direct Message to the CEO</h2>
+
+    <form>
+        <label>Your Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Your Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Your Phone Number:</label><br>
+        <input type="text" placeholder="Enter your phone number"><br><br>
+
+        <label>Your Message:</label><br>
+        <textarea rows="6" placeholder="Write your message here..."></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgroTech Innovations. All rights reserved.</p>
+    </footer>
+    
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    const topbar = document.querySelector(".topbar");
+
+    sidebar.classList.toggle("closed");
+    content.classList.toggle("shift");
+    topbar.classList.toggle("shift");
+}
+</script>
+</body>
+</html>

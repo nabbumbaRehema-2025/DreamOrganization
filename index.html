@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgroTech Innovations - Home</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- Navigation Bar -->
+    <!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+    <h2>AgroTech</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    <h1>AgroTech Innovations</h1>
+</div>
+
+<!-- Content wrapper -->
+<div id="content">
+
+    <hr>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <h2>Smart Farming Through Technology</h2>
+
+        <!-- These will later act as slideshow images -->
+        <div>
+            <img src="irrigation.jpg" width="100%">
+            <p style="text-align:center;">Automated Irrigation</p>
+        </div>
+
+        <div>
+            <img src="drone.jpg" width="100%">
+            <p style="text-align:center;">Drone Monitoring</p>
+        </div>
+
+        <div>
+            <img src="soil.jpg" width="100%">
+            <p style="text-align:center;">Soil Sensor Technology</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>
+            To transform traditional farming by applying modern Information Technology tools 
+            such as IoT devices, drones, data analytics, and smart irrigation to improve 
+            productivity and sustainability.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- What We Do -->
+    <section id="what-we-do">
+        <h2>What We Do</h2>
+        <ul>
+            <li>Introduce smart irrigation systems.</li>
+            <li>Use drones for crop health monitoring.</li>
+            <li>Provide farm data analytics dashboards.</li>
+            <li>Install IoT devices for soil & weather monitoring.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgroTech Innovations. All rights reserved.</p>
+    </footer>
+
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    const topbar = document.querySelector(".topbar");
+
+    sidebar.classList.toggle("closed");
+    content.classList.toggle("shift");
+    topbar.classList.toggle("shift");
+}
+</script>
+</body>
+</html>

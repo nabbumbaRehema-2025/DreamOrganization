@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - AgroTech Innovations</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+    <h2>AgroTech</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    <h1>AgroTech Innovations</h1>
+</div>
+
+<!-- Content wrapper -->
+<div id="content">
+
+<hr>
+
+<section>
+    <h2>Our Major Projects</h2>
+    <p>We are committed to transforming agriculture through technology-driven solutions.</p>
+</section>
+
+<hr>
+
+<!-- Project 1 -->
+<section>
+    <h3>1. Smart Irrigation Pilot Program</h3>
+    <p>
+        We deployed IoT irrigation controllers and soil moisture sensors in selected farms 
+        to reduce water loss and improve crop productivity.
+    </p>
+
+    <img src="irrigation.jpg" width="100%" alt="Smart Irrigation">
+</section>
+
+<hr>
+
+<!-- Project 2 -->
+<section>
+    <h3>2. Drone Crop Health Survey</h3>
+    <p>
+        Our team used agricultural drones to scan fields and detect pest infestations, 
+        nutrient deficiencies, and crop stress early.
+    </p>
+
+    <img src="drone.jpg" width="100%" alt="Drone Survey">
+</section>
+
+<hr>
+
+<!-- Project 3 -->
+<section>
+    <h3>3. Soil & Weather Monitoring System</h3>
+    <p>
+        Installation of IoT-based soil and weather sensors that send real-time data 
+        to a dashboard used by farmers to guide planting, watering, and spraying decisions.
+    </p>
+
+    <img src="soil.jpg" width="100%" alt="Soil Monitoring">
+</section>
+
+<hr>
+
+<!-- Project 4 -->
+<section>
+    <h3>4. Digital Farmer Training Sessions</h3>
+    <p>
+        We trained farmers on using smartphones, agricultural apps, and digital farm records 
+        to improve farm management and market access.
+    </p>
+
+    <img src="training.jpg" width="100%" alt="Training Program">
+</section>
+
+<hr>
+
+<!-- Project 5 -->
+<section>
+    <h3>5. AgroTech Mobile App Development</h3>
+    <p>
+        We built a prototype mobile app that helps farmers track crop growth, input usage, 
+        weather patterns, and soil conditions.
+    </p>
+
+    <img src="mobile.jpg" width="100%" alt="App Development">
+</section>
+
+<hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgroTech Innovations. All rights reserved.</p>
+    </footer>
+    
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    const topbar = document.querySelector(".topbar");
+
+    sidebar.classList.toggle("closed");
+    content.classList.toggle("shift");
+    topbar.classList.toggle("shift");
+}
+</script>
+</body>
+</html>

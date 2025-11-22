@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - AgroTech Innovations</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+    <h2>AgroTech</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    <h1>AgroTech Innovations</h1>
+</div>
+
+<!-- Content wrapper -->
+<div id="content">
+
+<hr>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        AgroTech Innovations is a youth-led organization focused on applying 
+        Information Technology to modernize agriculture and support farmers 
+        with digital solutions.
+    </p>
+
+    <img src="one.jpg" width="100%">
+</section>
+
+<hr>
+
+<section>
+    <h2>Our Vision</h2>
+    <p>
+        To become a leading regional center for smart agriculture, using modern 
+        technologies such as sensors, drones, smart irrigation, and data analytics.
+    </p>
+
+    <img src="vision.jpg" width="100%">
+</section>
+
+<hr>
+
+<section>
+    <h2>Meet Our Team</h2>
+    <p>We are a multi-disciplinary team passionate about agriculture and technology.</p>
+
+    <div>
+        <img src="Rehema.jpg" width="45%">
+        <img src="bb.jpg" width="45%">
+    </div>
+
+    <div>
+        <img src="cc.jpg" width="45%">
+        <img src="dd.jpg" width="45%">
+    </div>
+
+    <div>
+        <img src="ee.jpg" width="45%">
+    </div>
+
+    <p style="text-align:center;">Our dedicated team works to bring smart solutions to farmers.</p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>We understand both agriculture and the power of technology.</li>
+        <li>We offer simple but effective smart farming solutions.</li>
+        <li>We support farmers from planning to full implementation.</li>
+        <li>We use real-time data to guide better decision-making.</li>
+    </ul>
+
+    <img src="why.jpg" width="100%">
+</section>
+
+<hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgroTech Innovations. All rights reserved.</p>
+    </footer>
+    
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    const topbar = document.querySelector(".topbar");
+
+    sidebar.classList.toggle("closed");
+    content.classList.toggle("shift");
+    topbar.classList.toggle("shift");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services - AgroTech Innovations</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Sidebar Navigation -->
+<div id="sidebar" class="sidebar">
+    <h2>AgroTech</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+    <h1>AgroTech Innovations</h1>
+</div>
+
+<!-- Content wrapper -->
+<div id="content">
+
+<hr>
+
+<section>
+    <h2>Our Services</h2>
+    <ul>
+        <li>Drone crop monitoring</li>
+        <li>Smart irrigation installation</li>
+        <li>Soil moisture and weather sensor deployment</li>
+        <li>Farm data analytics and reporting</li>
+        <li>Training farmers on digital tools</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>Gallery</h2>
+
+    <div>
+        <img src="drone.jpg" width="100%">
+        <p style="text-align:center;">Drone Monitoring Service</p>
+    </div>
+
+    <div>
+        <img src="irrigation.jpg" width="100%">
+        <p style="text-align:center;">Smart Irrigation Setup</p>
+    </div>
+
+</section>
+
+<hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgroTech Innovations. All rights reserved.</p>
+    </footer>
+    
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const content = document.getElementById("content");
+    const topbar = document.querySelector(".topbar");
+
+    sidebar.classList.toggle("closed");
+    content.classList.toggle("shift");
+    topbar.classList.toggle("shift");
+}
+</script>
+</body>
+</html>
